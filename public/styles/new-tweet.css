@@ -1,0 +1,27 @@
+.new-tweet {
+  border: 1px solid black;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: .5em;
+  background-color: lightgray;
+  padding-bottom: 2em;
+}
+
+.new-tweet h2 {
+  border-bottom: 2px black solid;
+}
+
+.new-tweet textarea {
+  display: inherit;
+  width: 320px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.new-tweet input {
+  float: left;
+}
+
+.new-tweet .counter {
+  float: right;
+}
