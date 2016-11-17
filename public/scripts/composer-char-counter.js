@@ -1,5 +1,5 @@
 $(function () {
-  console.log('DOMContentLoaded has fired');
+
 
 var maxLength = 140;
 $('.text').keyup(function() {

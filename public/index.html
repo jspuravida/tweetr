@@ -11,10 +11,15 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+<!-- Navigation bar area -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
+<!-- Compose-Tweet area -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+ <!-- Tweeter tweets below -->
+    <link rel="stylesheet" href="/styles/listOfTweets.css" type="text/css" />
+ <!-- Boot Strap Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -36,6 +41,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
@@ -44,7 +50,26 @@
           <span class="counter">140</span>
         </form>
       </section>
-    </main>
 
+      <section class="listOfTweets">
+       <!--  <article class="tweet">
+          <header>
+            <img class="avatar" src="">
+            <div class="tweeterName"></div>
+            <div class="tweetHandler"></div>
+          </header>
+          <div class="tweetMessage"></div>
+          <footer>
+            <div class="footerDate"></div>
+            <div class="footerIcons">
+              <i class="fa fa-flag" aria-hidden="true"></i>
+              <i class="fa fa-retweet" aria-hidden="true"></i>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </div>
+          </footer>
+        </article> -->
+      </section>
+
+    </main>
   </body>
 </html>

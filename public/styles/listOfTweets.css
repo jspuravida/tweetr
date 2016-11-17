@@ -1,0 +1,92 @@
+/*TWEET ARTICLE STYLING*/
+.tweet {
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background-color: white;
+  margin-top: 25px;
+  opacity: 0.4;
+}
+
+/*TWEET ARTICLE STYLING FOR HOVER*/
+.tweet:hover {
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background-color: white;
+  margin-top: 25px;
+  opacity: 1;
+}
+
+/*HEADER STYLING*/
+.tweet header {
+  background-color: lightgray;
+  padding-bottom: 1em;
+  height: 80px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+/*AVATAR STYLING*/
+.tweet .avatar {
+  float: left;
+  border-radius: 0.5em;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+}
+
+/*AUTHOR NAME STYLING*/
+.tweet .tweeterName {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline-block;
+  font-size: 1.50em;
+  padding-left: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.7em;
+}
+
+/*HANDLE STYLING*/
+.tweet .tweetHandler {
+  float: right;
+  display: inline;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+}
+
+/*Tweeter Messages*/
+.tweet .tweetMessage {
+  height: 130px;
+  padding-left: 2em;
+  padding-top: 2em;
+  display: inline-block;
+}
+
+/*FOOTER STYLING*/
+.tweet footer {
+  background-color: white;
+  height: 40px;
+  border-top: 1px solid lightgrey;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+/*FOOTER DATE STYLING*/
+.tweet .footerDate {
+  float:left;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+/*FOOTER ICONS */
+.tweet .footerIcons {
+  float: right;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  opacity: 0;
+}
+/*FOOTER ICONS ON HOVER*/
+.tweet:hover .footerIcons {
+  float: right;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  opacity: 1;
+}
