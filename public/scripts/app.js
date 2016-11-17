@@ -52,14 +52,18 @@ $(function () {
     "created_at": 1461113796368
   }
 ];
-///////////////////
+///////////////////CREATING NEW TWEETS
 function renderTweets(tweets) {
   tweets.forEach(function (data) {
     createTweetElement(data);
     return;
   })
-
-
+////////////////////////SAFEGUARDING TEXTFIELDS
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 ////// FUNCTION FOR TURNING A TWEET INTO AN ELEMENT ///////
 function createTweetElement(tweet) {
@@ -84,7 +88,7 @@ function createTweetElement(tweet) {
         <div class="tweeterName">${name}</div>
         <div class="tweetHandler">${handle}</div>
       </header>
-      <div class="tweetMessage">${content}</div>
+      <div class="tweetMessage">${escape(content)}</div>
       <footer>
         <div class="footerDate">${date}</div>
         <div class="footerIcons">${footerIcons}
