@@ -6,6 +6,17 @@
 
 $(function () {
 
+//========USING TOGGLE ON THE COMPOSE BUTTON
+$( ".new-tweet ").hide();
+
+
+$( ".composeButton" ).click(function() {
+  $( ".new-tweet" ).toggle( "slow", function() {
+    $( " .text ").focus()
+  })
+})
+
+
 
 ///////////////////CREATING NEW TWEETS
 function renderTweets(tweets) {

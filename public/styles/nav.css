@@ -25,3 +25,27 @@
   height: 80px;
   float: left;
 }
+
+#nav-bar .composeButton {
+  width: 110px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  display: inline;
+  float: right;
+  margin-top: 17px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+#nav-bar .composeButton:hover {
+  width: 110px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  display: inline;
+  float: right;
+  margin-top: 17px;
+  border-radius: 10px;
+  opacity: 1;
+}
