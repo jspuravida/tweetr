@@ -1,15 +1,45 @@
+var maxLength = 140;
+
 $(function () {
 
+  var $counter = $(".counter");
+  var $button = $(".button");
 
-var maxLength = 140;
-$('.text').keyup(function() {
-  var length = $(this).val().length;
-  var length = maxLength-length;
-  $('.counter').text(length);
+  $('.text').keyup(function(event) {
 
-  if (length < 0) {
-    $(".counter").text(length).css("color", "red");
+    var length = $(this).val().length;
+    checkTweetLength(event, length);
+
+  });
+
+  $('form').submit(function(event) {
+
+    var length = $(this).find('.text').val().length;
+    checkTweetLength(event, length);
+
+  });
+
+  function checkTweetLength(event, length) {
+
+    if (length > 0 && length <= maxLength) {
+
+      $counter.text(maxLength-length).css("color", "black");
+      $button.prop('disabled', false);
+
+    } else if (length > maxLength) {
+
+      event.preventDefault();
+      $counter.css("color", "red").text("Too many!");
+      $button.prop('disabled', true);
+
+    } else {
+
+      event.preventDefault();
+      $counter.css("color", "red").text("Nothing Entered");
+      $button.prop('disabled', true);
+
+    }
   }
-});
+
 });
 

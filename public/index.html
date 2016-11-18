@@ -11,14 +11,14 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-<!-- Navigation bar area -->
+    <!-- Navigation bar area -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-<!-- Compose-Tweet area -->
+    <!-- Compose-Tweet area -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
- <!-- Tweeter tweets below -->
+    <!-- Tweeter tweets below -->
     <link rel="stylesheet" href="/styles/listOfTweets.css" type="text/css" />
- <!-- Boot Strap Font Awesome -->
+    <!-- Boot Strap Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
     <!-- External JS -->
@@ -26,7 +26,8 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
-
+    <!-- Script to turn tweet characters to red if over 140  -->
+    <!-- ALSO a script to validate submission if characters entered is between 0 and 140  -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
   </head>
@@ -46,7 +47,7 @@
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
           <textarea class="text" name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input type="submit" value="Tweet" class="button">
           <span class="counter">140</span>
         </form>
       </section>
